@@ -1,0 +1,128 @@
+.footer {
+  $footerOffsetX: 66rem;
+  padding-top: $footerOffsetX;
+  padding-bottom: $footerOffsetX;
+  &__container {
+  }
+  &__inner {
+    background: rgba($blackColor, .05);
+    border-radius: $radiusXl;
+  }
+  &__top {
+    padding: $footerOffsetX $footerOffsetX 45rem;
+    &-row {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+  &__col {
+    &--nav {
+      display: flex;
+      flex-direction: column;
+    }
+    &--subscribe {
+      max-width: 280rem;
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 280rem;
+    }
+    &--logo {
+    }
+    &--payments {
+    }
+    &-top {
+      max-width: 35%;
+    }
+  }
+  &__nav {
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      &:not(:last-child) {
+        margin-bottom: 20rem;
+      }
+    }
+    &-title {
+      margin: 0 0 20rem;
+      display: block;
+      font-weight: bold;
+      font-size: var(--fs-3);
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &-link {
+      display: block;
+      font-weight: 600;
+      color: rgba($fontColor, .5);
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &-link-contacts {
+      display: block;
+      font-weight: 600;
+      font-size: var(--fs-3);
+      color: rgba($fontColor, .5);
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__sc {
+    margin-top: auto;
+  }
+  &__subscribe {
+    margin: 0 0 20rem;
+    &-appeal {
+      font-size: var(--fs-3);
+      line-height: $lineHeightLg;
+      opacity: .8;
+    }
+    &-nav {
+      margin-top: auto;
+      font-size: var(--fs-6);
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      li {
+        margin: 0;
+        padding: 0;
+        &:not(:last-child) {
+          margin-bottom: 10rem;
+        }
+      }
+      a {
+        color: rgba($fontColor, .5);
+        transition: $transition;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__bottom {
+    padding: 31rem $footerOffsetX;
+    border-top: 1px solid rgba(#858FA4, .15);
+    &-row {
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+  &__logo {
+    flex-shrink: 0;
+  }
+  &__payments-method {
+  }
+}

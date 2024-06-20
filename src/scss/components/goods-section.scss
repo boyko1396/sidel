@@ -1,0 +1,76 @@
+
+.good-card {
+  font-family: $accentFamily;
+  &__inner {
+    background: $lightGreyColor;
+    padding-top: 15rem;
+    border-radius: $radiusMd;
+    position: relative;
+  }
+  &__action {
+    width: 100%;
+    padding: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    &-btn-favorite {
+      margin-left: auto;
+    }
+  }
+  &__picture {
+    @extend %img-contain;
+    margin-bottom: -50rem;
+    padding-bottom: 100%;
+  }
+  &__content {
+    padding: 20rem;
+  }
+  &__vendor {
+    margin: 0 0 14rem;
+    font-size: var(--fs-6);
+    color: $greyColor;
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    margin: 0 0 2rem;
+    font-weight: 500;
+  }
+  &__link {
+    @extend %link-cover;
+    &:before {
+      border-radius: $radiusMd;
+    }
+  }
+  &__price {
+  }
+}
+
+.goods-section {
+  padding: 80rem 0;
+  &__container {
+  }
+  &__header {
+    margin: 0 0 30rem;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__list {
+  }
+  &__row {
+  }
+  &__col {
+    &--5 {
+      max-width: 20%;
+      flex-basis: 20%;
+    }
+  }
+  &__card {
+    height: 100%;
+  }
+}

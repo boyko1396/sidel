@@ -1,0 +1,82 @@
+$siteResolution: 1px;
+$mainFont: 'Montserrat';
+$accentFont: 'Gilroy';
+$mainWeight: 500;
+$lineHeightXs: 1;
+$lineHeightSm: 1.1;
+$lineHeightMd: 1.25;
+$lineHeightSemi: 1.35;
+$lineHeightLg: 1.4;
+$lineHeightXl: 1.5;
+$lineHeightDefault: $lineHeightSemi;
+
+$containerWidth: 1260rem;
+
+$gap: 10rem;
+$gapFluid: 20rem;
+
+$radiusSm: 10rem;
+$radiusSemi: 12rem;
+$radiusMd: 15rem;
+$radiusXl: 40rem;
+
+$whiteColor: #ffffff;
+$blackColor: #23262F;
+$blueColor: #1A63D1;
+$greyColor: #B1B5C3;
+$lightGreyColor: #F4F5F6;
+$steelGreyColor: #E7E7E9;
+$gloryGreyColor: #D9D9D9;
+$ultraGrenColor: #D3D5D9;
+$greenColor: #45B26B;
+$lightGreenColor: #32BF79;
+$yellowColor: #FCE667;
+$redColor: #EF4650;
+$lightRedColor: #EE7874;
+$accentColor: $blueColor;
+
+$fontFamily: $mainFont, $accentFont, Arial, sans-serif;
+$accentFamily: $accentFont, $mainFont, Arial, sans-serif;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$scrollbarWidth: 6rem;
+
+$colWidth: 8.33333333333%;
+$colAside: 22.521%;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: var(--fs-4);
+  --fs-1: 30rem;
+  --fs-2: 20rem;
+  --fs-3: 16rem;
+  --fs-4: 14rem;
+  --fs-5: 13rem;
+  --fs-6: 12rem;
+  --fs-7: 10rem;
+  --fs-8: 9rem;
+
+  --gap: 10rem;
+  --gap-: -10rem;
+  --gap-fluid: 20rem;
+  --gap-fluid-: -20rem;
+  @media (max-width: $sm) {
+  }
+}

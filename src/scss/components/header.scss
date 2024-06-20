@@ -1,0 +1,43 @@
+.header {
+  &__container {
+  }
+  &__inner {
+    padding: 25rem 0;
+  }
+  &__row {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  &__col-aside {
+    max-width: $colAside;
+    flex-basis: $colAside;
+  }
+  &__col-main {
+    flex-grow: 1;
+  }
+  &__logo {
+  }
+  &__main {
+    display: flex;
+  }
+  &__search {
+    margin-right: 78rem;
+    margin-right: 8.5%;
+    flex-grow: 1;
+  }
+  &__action {
+    flex-shrink: 0;
+    &-btn {
+      &:not(:last-child) {
+        margin-right: 15rem;
+      }
+      &--contacts {
+        padding-right: 25rem;
+        padding-left: 25rem;
+        .u-icon {
+          color: $greenColor;
+        }
+      }
+    }
+  }
+}

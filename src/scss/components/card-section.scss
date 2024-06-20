@@ -1,0 +1,127 @@
+.card-section {
+  font-family: $accentFamily;
+  &__container {
+  }
+  &__row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__col {
+    &--media {
+      max-width: 478rem;
+      margin-right: 8.2%;
+      flex: 0 0 41%;
+    }
+    &--main {
+      flex-grow: 1;
+    }
+  }
+  &__media {
+    &-top {
+      margin-bottom: var(--gap-fluid);
+      position: relative;
+    }
+    &-action {
+      width: 100%;
+      padding: var(--gap-fluid);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      &-btn-prev {
+      }
+      &-btn-favorite {
+      }
+    }
+    &-main {
+      &-picture {
+        @extend %img-cover;
+        padding-bottom: 100%;
+        border-radius: $radiusMd;
+        position: relative;
+        overflow: hidden;
+        img {
+        }
+      }
+    }
+    &-main-dot {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 38rem;
+      left: 0;
+      button {
+        @extend %btn-reset;
+        background: $blackColor;
+        width: 8rem;
+        height: 8rem;
+        margin: 0 7rem;
+        border-radius: 50%;
+        cursor: pointer;
+        &:not(:first-child) {
+          opacity: .2;
+        }
+      }
+    }
+    &-nav {
+      margin: 0 var(--gap-);
+      display: flex;
+      &-col {
+        max-width: 25%;
+        padding: 0 var(--gap);
+        flex: 0 0 25%;
+      }
+      &-picture {
+        @extend %img-cover;
+        padding-bottom: 100%;
+        border-radius: $radiusSemi;
+        position: relative;
+        overflow: hidden;
+        img {
+        }
+      }
+    }
+  }
+  &__main {
+    &-info {
+      margin: 0 0 25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      &-cashback {
+        margin-right: 20rem;
+        flex-shrink: 0;
+      }
+      &-vendor {
+        margin: 0;
+        flex-shrink: 0;
+        color: $greyColor;
+      }
+    }
+  }
+  &__title {
+    margin: 0 0 28rem;
+    line-height: $lineHeightSm;
+  }
+  &__weight {
+    &-title {
+      margin: 0 0 13rem;
+    }
+    &-inner {
+      display: flex;
+    }
+    &-list {
+      margin-right: 26rem;
+      flex-wrap: wrap;
+    }
+    &-availability {
+      flex-shrink: 0;
+      align-self: center;
+    }
+  }
+}
