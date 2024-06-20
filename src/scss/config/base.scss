@@ -15,7 +15,6 @@
     max-width: 100%;
     min-height: 1rem;
     padding: 0 var(--gap);
-    flex-shrink: 0;
     @for $i from 1 through 12 {
       &--#{$i} {
         @extend .row__col;

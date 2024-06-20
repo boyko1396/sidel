@@ -24,3 +24,43 @@ document.addEventListener('DOMContentLoaded', function() {
   // faq card
   // new FaqCard();
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const minusBtn = document.querySelector('.js-good-count-minus');
+  const plusBtn = document.querySelector('.js-good-count-plus');
+  const input = document.querySelector('.good-count__input');
+  const minValue = parseInt(input.min);
+  const maxValue = parseInt(input.max);
+
+  function updateButtons() {
+    const value = parseInt(input.value);
+    minusBtn.classList.toggle('is-disabled', value <= minValue);
+    plusBtn.classList.toggle('is-disabled', value >= maxValue);
+  }
+
+  function updateInputValue(increment) {
+    let value = parseInt(input.value);
+    value += increment;
+    value = Math.max(minValue, Math.min(maxValue, value));
+    const prefix = input.dataset.prefix;
+    input.value = `${value} ${prefix}`;
+    updateButtons();
+  }
+
+  function setInitialValue() {
+    const initialValue = parseInt(input.value);
+    const prefix = input.dataset.prefix;
+    input.value = `${initialValue} ${prefix}`;
+    updateButtons();
+  }
+
+  minusBtn.addEventListener('click', function () {
+    updateInputValue(-1);
+  });
+
+  plusBtn.addEventListener('click', function () {
+    updateInputValue(1);
+  });
+
+  setInitialValue();
+});

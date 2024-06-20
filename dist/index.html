@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20240620183740">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240620214520">
   <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
@@ -138,7 +138,7 @@
                   <div class="card-section__media">
                     <div class="card-section__media-top">
                       <div class="card-section__media-action">
-                        <a href="#" class="btn btn--size-sm btn--theme-black card-section__media-action-btn-prev">
+                        <a href="#" class="btn btn--theme-black btn--size-sm card-section__media-action-btn-prev">
                           <span class="btn__inner">
                             <svg class="u-icon btn__icon">
                               <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
@@ -264,6 +264,119 @@
                         <p class="availability availability--size-sm availability--theme-green card-section__weight-availability">В наличии<br>на складе</p>
                       </div>
                     </div>
+                    <form action="#" class="card-section__info">
+                      <div class="card-section__info-left">
+                        <div class="card-section__info-header">
+                          <div class="u-tip u-tip--size-sm u-tip--theme-yellow card-section__info-tip">
+                            <div class="u-tip__count">-15%</div>
+                          </div>
+                          <div class="card-section__info-price-old price-old price-old--theme-gray">2176 руб</div>
+                        </div>
+                        <p class="title-size-1 card-section__info-price price-new price-new--theme-black">1850 руб</p>
+                      </div>
+                      <div class="card-section__info-action">
+                        <div class="card-section__info-action-wrapper">
+                          <div class="card-section__info-action-count good-count">
+                            <button type="button" class="good-count__btn good-count__btn--minus js-good-count-minus">
+                              <svg class="u-icon u-icon--size-md">
+                                <use xlink:href="images/icons/icons.svg#minus-type-2"></use>
+                              </svg>
+                            </button>
+                            <input type="text" name="count" min="1" max="10" readonly="readonly" class="good-count__input" data-prefix="шт" value="1">
+                            <button type="button" class="good-count__btn good-count__btn--plus js-good-count-plus">
+                              <svg class="u-icon u-icon--size-md">
+                                <use xlink:href="images/icons/icons.svg#plus-type-2"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <button type="button" class="btn btn--theme-black btn--size-md card-section__info-action-btn">
+                            <span class="btn__inner">
+                              <span class="btn__title">В корзину</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class="card-section__info-action-help">
+                          <a href="#" class="card-section__info-action-help-link">Как оформить заказ?</a>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="card-section__faq" itemscope itemtype="https://schema.org/FAQPage">
+                      <article class="card-section__faq-item faq-card faq-card--size-sm" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <svg class="u-icon faq-card__btn-icon">
+                              <use xlink:href="images/icons/icons.svg#faq-icon-1"></use>
+                            </svg>
+                            <h3 class="faq-card__title" itemprop="name" data-translate="faqCard1Title">Описание</h3>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#plus-type-1"></use>
+                            </svg>
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#minus-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="content faq-card__text"></div>
+                        </div>
+                      </article>
+                      <article class="card-section__faq-item faq-card faq-card--size-sm" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <svg class="u-icon faq-card__btn-icon">
+                              <use xlink:href="images/icons/icons.svg#faq-icon-2"></use>
+                            </svg>
+                            <h3 class="faq-card__title" itemprop="name" data-translate="faqCard1Title">Доставка и самовывоз</h3>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#plus-type-1"></use>
+                            </svg>
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#minus-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="content faq-card__text">
+                            
+                          </div>
+                        </div>
+                      </article>
+                      <article class="card-section__faq-item faq-card faq-card--size-sm" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <svg class="u-icon faq-card__btn-icon">
+                              <use xlink:href="images/icons/icons.svg#faq-icon-3"></use>
+                            </svg>
+                            <h3 class="faq-card__title" itemprop="name" data-translate="faqCard1Title">Платежная информация</h3>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#plus-type-1"></use>
+                            </svg>
+                            <svg class="u-icon">
+                              <use xlink:href="images/icons/icons.svg#minus-type-1"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="content faq-card__text">
+                            
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="card-section__help">
+                      <a href="#" class="card-section__help-link">
+                        <svg class="u-icon u-icon--size-md">
+                          <use xlink:href="images/icons/icons.svg#chat"></use>
+                        </svg>
+                        <span>Обратная связь</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -274,7 +387,7 @@
           <section class="goods-section">
             <div class="container goods-section__container">
               <header class="goods-section__header">
-                <h2 class="goods-section__title title-size-1">Похоже на то, что вы искали</h2>
+                <h2 class="title-size-1 goods-section__title">Похоже на то, что вы искали</h2>
               </header>
               <div class="goods-section__list">
                 <div class="row goods-section__row">
@@ -306,6 +419,36 @@
                     <article class="good-card goods-section__card">
                       <div class="good-card__inner">
                         <div class="good-card__action">
+                          <div class="u-tip u-tip--size-sm u-tip--theme-yellow good-card__action-tip">
+                            <div class="u-tip__count">-15%</div>
+                          </div>
+                          <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite is-favorite">
+                            <svg class="u-icon u-icon--size-md btn-action__icon">
+                              <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                            </svg>
+                            <span class="btn-action__title sr-only">Добавить в избранное</span>
+                          </button>
+                        </div>
+                        <picture class="good-card__picture">
+                          <img src="images/card-1.jpg" alt="Семена Укроп ”Плюс”">
+                        </picture>
+                        <div class="good-card__content">
+                          <p class="good-card__vendor">Арт. 17251076</p>
+                          <h3 class="good-card__title">
+                            <a href="#" class="good-card__link title-size-3">Семена Укроп ”Плюс”</a>
+                          </h3>
+                          <div class="good-card__price title-size-2">790 руб./шт</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col goods-section__col goods-section__col--5">
+                    <article class="good-card goods-section__card">
+                      <div class="good-card__inner">
+                        <div class="good-card__action">
+                          <div class="u-tip u-tip--size-sm u-tip--theme-yellow good-card__action-tip">
+                            <div class="u-tip__count">-15%</div>
+                          </div>
                           <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite">
                             <svg class="u-icon u-icon--size-md btn-action__icon">
                               <use xlink:href="images/icons/icons.svg#heart-outline"></use>
@@ -330,6 +473,127 @@
                     <article class="good-card goods-section__card">
                       <div class="good-card__inner">
                         <div class="good-card__action">
+                          <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite">
+                            <svg class="u-icon u-icon--size-md btn-action__icon">
+                              <use xlink:href="images/icons/icons.svg#heart-outline"></use>
+                            </svg>
+                            <span class="btn-action__title sr-only">Добавить в избранное</span>
+                          </button>
+                        </div>
+                        <picture class="good-card__picture">
+                          <img src="images/card-1.jpg" alt="Семена Укроп ”Плюс”">
+                        </picture>
+                        <div class="good-card__content">
+                          <p class="good-card__vendor">Арт. 17251076</p>
+                          <h3 class="good-card__title">
+                            <a href="#" class="good-card__link title-size-3">Семена Укроп ”Плюс”</a>
+                          </h3>
+                          <div class="good-card__price title-size-2">790 руб./шт</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col goods-section__col goods-section__col--5">
+                    <article class="good-card goods-section__card">
+                      <div class="good-card__inner">
+                        <div class="good-card__action">
+                          <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite">
+                            <svg class="u-icon u-icon--size-md btn-action__icon">
+                              <use xlink:href="images/icons/icons.svg#heart-outline"></use>
+                            </svg>
+                            <span class="btn-action__title sr-only">Добавить в избранное</span>
+                          </button>
+                        </div>
+                        <picture class="good-card__picture">
+                          <img src="images/card-1.jpg" alt="Семена Укроп ”Плюс”">
+                        </picture>
+                        <div class="good-card__content">
+                          <p class="good-card__vendor">Арт. 17251076</p>
+                          <h3 class="good-card__title">
+                            <a href="#" class="good-card__link title-size-3">Семена Укроп ”Плюс”</a>
+                          </h3>
+                          <div class="good-card__price title-size-2">790 руб./шт</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section class="goods-section">
+            <div class="container goods-section__container">
+              <header class="goods-section__header">
+                <h2 class="title-size-1 goods-section__title">Новые поступления</h2>
+                <div class="goods-section__header-badge u-badge u-badge--size-sm u-badge--theme-red">
+                  <div class="u-badge__title">новинка</div>
+                </div>
+                <div class="goods-section__header-aside">
+                  <a href="#" class="goods-section__header-moore">Смотреть все</a>
+                </div>
+              </header>
+              <div class="goods-section__list">
+                <div class="row goods-section__row">
+                  <div class="row__col goods-section__col goods-section__col--5">
+                    <article class="good-card goods-section__card">
+                      <div class="good-card__inner">
+                        <div class="good-card__action">
+                          <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite">
+                            <svg class="u-icon u-icon--size-md btn-action__icon">
+                              <use xlink:href="images/icons/icons.svg#heart-outline"></use>
+                            </svg>
+                            <span class="btn-action__title sr-only">Добавить в избранное</span>
+                          </button>
+                        </div>
+                        <picture class="good-card__picture">
+                          <img src="images/card-1.jpg" alt="Семена Укроп ”Плюс”">
+                        </picture>
+                        <div class="good-card__content">
+                          <p class="good-card__vendor">Арт. 17251076</p>
+                          <h3 class="good-card__title">
+                            <a href="#" class="good-card__link title-size-3">Семена Укроп ”Плюс”</a>
+                          </h3>
+                          <div class="good-card__price title-size-2">790 руб./шт</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col goods-section__col goods-section__col--5">
+                    <article class="good-card goods-section__card">
+                      <div class="good-card__inner">
+                        <div class="good-card__action">
+                          <div class="u-tip u-tip--size-sm u-tip--theme-yellow good-card__action-tip">
+                            <div class="u-tip__count">-15%</div>
+                          </div>
+                          <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite is-favorite">
+                            <svg class="u-icon u-icon--size-md btn-action__icon">
+                              <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                            </svg>
+                            <span class="btn-action__title sr-only">Добавить в избранное</span>
+                          </button>
+                        </div>
+                        <picture class="good-card__picture">
+                          <img src="images/card-1.jpg" alt="Семена Укроп ”Плюс”">
+                        </picture>
+                        <div class="good-card__content">
+                          <p class="good-card__vendor">Арт. 17251076</p>
+                          <h3 class="good-card__title">
+                            <a href="#" class="good-card__link title-size-3">Семена Укроп ”Плюс”</a>
+                          </h3>
+                          <div class="good-card__price title-size-2">790 руб./шт</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col goods-section__col goods-section__col--5">
+                    <article class="good-card goods-section__card">
+                      <div class="good-card__inner">
+                        <div class="good-card__action">
+                          <div class="u-tip u-tip--size-sm u-tip--theme-yellow good-card__action-tip">
+                            <div class="u-tip__count">-15%</div>
+                          </div>
                           <button type="button" class="btn-action btn-action--theme-white btn-action--size-exs good-card__action-btn-favorite">
                             <svg class="u-icon u-icon--size-md btn-action__icon">
                               <use xlink:href="images/icons/icons.svg#heart-outline"></use>
@@ -567,6 +831,6 @@
       </div>
     </div>
 
-    <script src="js/app.min.js??=v=20240620183740"></script>
+    <script src="js/app.min.js??=v=20240620214520"></script>
   </body>
 </html>
