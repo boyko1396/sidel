@@ -34,7 +34,7 @@
   font-size: inherit;
   font-size: var(--btn-font-size);
   line-height: $lineHeightDefault;
-  font-family: $mainFont;
+  font-family: $fontFamily;
   text-align: center;
   text-transform: none;
   border: none;
@@ -78,7 +78,7 @@
     }
     &-md {
       --btn-height: 54rem;
-      --btn-padding-x: 26rem;
+      --btn-padding-x: 54rem;
       --btn-padding-y: 12rem;
       --btn-font-size: var(--fs-3);
       border-radius: $radiusSm;
@@ -108,14 +108,20 @@
 .u-input {
   width: 100%;
   display: block;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
-  line-height: 1.4;
+  line-height: $lineHeightMd;
+  font-family: $fontFamily;
   outline: none;
   transition: $transition;
   &--theme {
     &-white {
+      background: $whiteColor;
+      border: 1px solid rgba(#636363, .3);
+      color: $blackColor;
+      border-radius: $radiusSm;
       &::placeholder {
+        color: rgba($blackColor, .3);
       }
       &:hover {
       }
@@ -125,9 +131,9 @@
   }
   &--size {
     &-md {
-      min-height: 50rem;
-      padding: 12rem 14rem;
-      font-size: var(--fs-6);
+      min-height: 54rem;
+      padding: 16rem 18rem;
+      font-size: var(--fs-3);
       @media (max-width: $sm) {
       }
     }
@@ -418,7 +424,7 @@
   &__btn {
     @extend %btn-reset;
     height: 100%;
-    padding: 0 22rem;
+    padding: 0 22rem 0 14rem;
     display: flex;
     align-items: center;
     border-radius: 0 $radiusSm $radiusSm 0;
@@ -688,23 +694,23 @@
   }
 }
 
-.faq-card {
+.good-faq-card {
   transition: $transition;
   transition-property: background, color;
   overflow: hidden;
   &--size {
     &-sm {
-      .faq-card__header {
+      .good-faq-card__header {
         padding: 24rem 0;
       }
-      .faq-card__title {
+      .good-faq-card__title {
         font-size: var(--fs-2);
       }
-      .faq-card__icon {
+      .good-faq-card__icon {
         width: 24rem;
         height: 24rem;
       }
-      .faq-card__text {
+      .good-faq-card__text {
         padding-bottom: 16rem;
       }
     }
@@ -724,7 +730,7 @@
     position: relative;
     &:hover {
       @media (min-width: $lg-mf) {
-        .faq-card__icon {
+        .good-faq-card__icon {
           color: $blackColor;
         }
       }
@@ -779,6 +785,93 @@
     height: 0;
     transition: $transition;
     overflow: hidden;
+  }
+  &__text {
+  }
+}
+
+.faq-card {
+  $faqCardOffsetSm: 24rem;
+  transition: $transition;
+  transition-property: background, color;
+  overflow: hidden;
+  &--size {
+    &-sm {
+      .faq-card__header {
+        padding: $faqCardOffsetSm;
+      }
+      .faq-card__title {
+        font-size: var(--fs-10);
+      }
+      .faq-card__icon {
+        background: $whiteColor;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+      }
+      .faq-card__inner {
+        padding: $faqCardOffsetSm;
+      }
+    }
+  }
+  &--theme {
+    &-gray {
+      background: $lightGreyColor;
+      border-radius: $radiusMd;
+    }
+  }
+  &.is-show {
+    .faq-card__icon {
+      transform: rotate(-180deg);
+    }
+  }
+  &:hover {
+    @media (min-width: $lg-mf) {
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: $transition;
+    transition-property: color;
+    position: relative;
+    &:hover {
+      @media (min-width: $lg-mf) {
+      }
+    }
+  }
+  &__btn {
+    @extend %btn-reset, %link-cover;
+    color: inherit;
+    text-align: left;
+    flex-grow: 1;
+    cursor: pointer;
+    &:before {
+      z-index: 1;
+    }
+  }
+  &__title {
+    margin: 0 30rem 0 0;
+  }
+  &__icon {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    transition: $transition;
+    transition-property: color, transform;
+  }
+  &__dropdown {
+    width: 100%;
+    height: 0;
+    transition: $transition;
+    overflow: hidden;
+  }
+  &__inner {
+    border-top: 1px solid rgba(#858FA4, .15);
   }
   &__text {
   }
@@ -849,5 +942,142 @@
     outline: none;
     user-select: none;
     transition: $transition;
+  }
+}
+
+.faq-list {
+  &__row {
+    margin-bottom: var(--gap-);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__col {
+    max-width: 100%;
+    margin-bottom: var(--gap);
+  }
+  &__card {
+  }
+}
+
+.contacts-card {
+  &__title {
+    margin: 0 0 10rem;
+    line-height: 1.2;
+  }
+  &__link {
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__content {
+  }
+  &__description {
+    margin: 0;
+    opacity: .8;
+  }
+}
+
+.contacts-list {
+  --contactsOfsset: 60rem;
+  --contactsOfsset-: -60rem;
+  &__row {
+    margin-bottom: var(--contactsOfsset-);
+  }
+  &__col {
+    margin-bottom: var(--contactsOfsset);
+  }
+  &__card {
+  }
+}
+
+.appeal-card {
+  &__inner {
+    background: $whiteColor;
+    padding: 20rem 20rem 54rem;
+    border-radius: $radiusSemi;
+  }
+  &__title {
+    margin: 0 0 15rem;
+  }
+  &__content {
+  }
+  &__text {
+    line-height: $lineHeightMd;
+    opacity: .8;
+  }
+}
+
+.appeal-form {
+  $appealFormGapYLg: 60rem;
+  $appealFormGapXLg: 66rem;
+  &__inner {
+    background: $lightGreyColor;
+    padding: $appealFormGapYLg $appealFormGapXLg;
+    border-radius: $radiusLg;
+    overflow: hidden;
+  }
+  &__body {
+    flex-wrap: nowrap;
+  }
+  &__row-col {
+    &--content {
+    }
+    &--form {
+    }
+  }
+  &__content {
+    max-width: 500rem;
+    position: relative;
+  }
+  &__title {
+    margin: 0 0 20rem;
+  }
+  &__text {
+    max-width: 320rem;
+    opacity: .8;
+  }
+  &__picture {
+    width: 150rem;
+    margin: 10rem 0 20rem -1*$appealFormGapXLg;
+    position: relative;
+    left: -57rem;
+    pointer-events: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__el {
+    &-line {
+      margin-bottom: calc(2 * var(--gap-));
+      --gap: 8rem;
+      --gap-: -8rem;
+    }
+    &-col {
+      margin-bottom: calc(2 * var(--gap));
+      &--12 {
+      }
+      &--6 {
+      }
+    }
+    &-input {
+    }
+    &-btn {
+      width: 100%;
+      margin-top: 9rem;
+      padding-right: 20rem;
+      padding-left: 20rem;
+    }
+  }
+  &__list {
+    margin-bottom: var(--gap-fluid-);
+    &-col {
+      margin-bottom: var(--gap-fluid);
+    }
+    &-card {
+      height: 100%;
+    }
   }
 }

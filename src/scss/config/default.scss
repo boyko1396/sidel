@@ -80,21 +80,21 @@ h6,
   font-style: normal;
   font-weight: 500;
   font-family: inherit;
-  line-height: $lineHeightDefault;
+  line-height: $lineHeightSmL;
 }
 
 h1,
 .title-size-1 {
   font-weight: 600;
   font-size: var(--fs-1);
-  line-height: $lineHeightXl;
+  line-height: $lineHeightSmL;
 }
 
 h2,
 .title-size-2 {
   font-weight: 600;
   font-size: var(--fs-2);
-  line-height: $lineHeightXl;
+  line-height: $lineHeightSmL;
   font-family: $accentFamily;
 }
 

@@ -4,6 +4,7 @@ $accentFont: 'Gilroy';
 $mainWeight: 500;
 $lineHeightXs: 1;
 $lineHeightSm: 1.1;
+$lineHeightSmL: 1.2;
 $lineHeightMd: 1.25;
 $lineHeightSemi: 1.35;
 $lineHeightLg: 1.4;
@@ -19,6 +20,7 @@ $radiusXs: 5rem;
 $radiusSm: 10rem;
 $radiusSemi: 12rem;
 $radiusMd: 15rem;
+$radiusLg: 30rem;
 $radiusXl: 40rem;
 
 $whiteColor: #ffffff;
@@ -76,6 +78,7 @@ $xs-mf: $xs + 1;
   --fs-7: 10rem;
   --fs-8: 9rem;
   --fs-9: 8rem;
+  --fs-10: 18rem;
 
   --gap: 10rem;
   --gap-: -10rem;

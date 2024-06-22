@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // slider init
   // SliderInit();
   // faq card
-  // new FaqCard();
+  new FaqCard();
 });
 
 document.addEventListener('DOMContentLoaded', function () {

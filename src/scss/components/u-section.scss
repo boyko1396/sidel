@@ -1,0 +1,23 @@
+.u-section {
+  padding: 30rem 0;
+  &__container {
+  }
+  &__header {
+    margin: 0 0 46rem;
+    display: flex;
+    align-items: center;
+    &-router-prev {
+      margin-right: 50rem;
+      flex-shrink: 0;
+    }
+    &-title {
+      margin: 0;
+    }
+  }
+  &__faq {
+  }
+  &__contacts {
+  }
+  &__contacts-form {
+  }
+}

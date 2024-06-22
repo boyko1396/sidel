@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240622155808">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Сидэл - Частые вопросы</title>
+</head>
+  <body>
+  <div class="u-preloader"></div>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        
+        <header class="header site__header">
+  <div class="container header__container">
+    <div class="header__inner">
+      <div class="row header__row">
+        <div class="row__col header__col-aside">
+          <a href="/" class="logo header__logo">
+            <picture class="logo__picture">
+              <img src="images/logo.png" alt="Сидэл" width="153" height="41">
+            </picture>
+          </a>
+        </div>
+        <div class="row__col header__col-main">
+          <div class="header__main">
+            <div class="header__search u-search">
+              <div class="u-search__inner">
+                <form action="#" class="u-search__form">
+                  <div class="u-search__form-area">
+                    <input type="text" name="q" class="u-search__form-input" placeholder="Поиск">
+                    <svg class="u-icon u-icon--size-md u-search__form-area-icon u-search__form-area-icon--search">
+                      <use xlink:href="images/icons/icons.svg#search"></use>
+                    </svg>
+                    <svg class="u-icon u-icon--size-md u-search__form-area-icon u-search__form-area-icon--close">
+                      <use xlink:href="images/icons/icons.svg#close-type-1"></use>
+                    </svg>
+                  </div>
+                </form>
+                <div class="u-search__catalog">
+                  <button type="button" class="js-search-catalog-toggle u-search__catalog-btn">
+                    <span class="u-search__catalog-btn-title">Каталог</span>
+                    <svg class="u-icon u-icon--size-md u-search__catalog-btn-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header__action">
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn header__action-btn--contacts">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#call"></use>
+                </svg>
+                <span class="btn-action__title">Контакты</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#basket"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Корзина</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Избранное</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#profile"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Профиль</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        
+        <main role="main" class="site__main">
+          <div class="site__breadcrumbs u-breadcrumbs">
+            <div class="container u-breadcrumbs__container">
+              <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a href="/" itemprop="item">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#home"></use>
+                    </svg>
+                    <span itemprop="name">Главная</span>
+                  </a>
+                  <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Частые вопросы</span>
+                  <meta itemprop="position" content="2">
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <section class="u-section">
+            <div class="container u-section__container">
+              <header class="u-section__header">
+                <a href="#" class="btn btn--size-sm btn--theme-black u-section__header-router-prev">
+                  <span class="btn__inner">
+                    <svg class="u-icon btn__icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                    </svg>
+                    <span class="btn__title">Назад</span>
+                  </span>
+                </a>
+                <h1 class="u-section__header-title">Частые вопросы</h1>
+              </header>
+              <div class="faq-list u-section__faq" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="row faq-list__row">
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Какие данные нужны для регистрации?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Какие данные нужны для регистрации?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Кто я и откуда?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Кто я и откуда?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </main>
+        
+        <footer class="footer site__footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="row footer__top-row">
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Карта сайта</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Главная</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Подписка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Лента</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Образование</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Семена овощей</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Семена фруктов</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Микрозелень</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Аксессуары для дачи</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Садовый инвентарь</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Контакты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="mailto:sidelshop@mail.ru" class="footer__nav-link-contacts">sidelshop@mail.ru</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="tel:+79685287239" class="footer__nav-link-contacts">+7 (968) 528-72-39</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__sc sc-block">
+              <ul class="sc-block__list">
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row__col footer__col-top footer__col--subscribe">
+            <div class="footer__subscribe u-subscribe">
+              <form action="#" class="u-subscribe__form">
+                <input type="email" name="subscribe" class="u-subscribe__input" required placeholder="Подписаться на рассылку">
+                <button type="submit" class="u-subscribe__btn">
+                  <svg class="u-icon u-icon--size-md">
+                    <use xlink:href="images/icons/icons.svg#logo-telegram"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="footer__subscribe-appeal">Заказывай и получай кэшбек до&nbsp;20% c каждой покупки!</div>
+            <nav class="footer__subscribe-nav">
+              <ul>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+                <li>
+                  <a href="#">Условия использования</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row footer__bottom-row">
+          <div class="row__col footer__col footer__col--logo">
+            <a href="/" class="logo footer__logo">
+              <picture class="logo__picture">
+                <img src="images/logo.png" alt="Сидэл" width="153" height="41">
+              </picture>
+            </a>
+          </div>
+          <div class="row__col footer__col footer__col--payments">
+            <div class="footer__payments-method payments-method">
+              <ul class="payments-method__list">
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-1.png" alt="VISA" width="40" height="40">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-2.png" alt="MasterCard" width="40" height="40">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-3.png" alt="WebMoney" width="30" height="32">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-4.png" alt="PayPal" width="55" height="20">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        
+      </div>
+    </div>
+
+    <script src="js/app.min.js??=v=20240622155808"></script>
+  </body>
+</html>
