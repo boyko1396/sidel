@@ -8,12 +8,16 @@
     align-items: center;
     flex-wrap: nowrap;
   }
-  &__col-aside {
-    max-width: $colAside;
-    flex-basis: $colAside;
-  }
-  &__col-main {
-    flex-grow: 1;
+  &__col {
+    &--aside {
+      max-width: $colAside;
+      margin-right: 4.8%;
+      flex-basis: $colAside;
+      flex-shrink: 0;
+    }
+    &--main {
+      flex-grow: 1;
+    }
   }
   &__logo {
   }
@@ -26,10 +30,11 @@
     flex-grow: 1;
   }
   &__action {
+    display: flex;
     flex-shrink: 0;
     &-btn {
       &:not(:last-child) {
-        margin-right: 15rem;
+        margin-right: 14rem;
       }
       &--contacts {
         padding-right: 25rem;

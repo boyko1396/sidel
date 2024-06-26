@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240626185714">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>Сидэл - Каталог</title>
+</head>
+  <body>
+  <div class="u-preloader"></div>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        
+        <header class="header site__header">
+  <div class="container header__container">
+    <div class="header__inner">
+      <div class="row header__row">
+        <div class="row__col header__col header__col--aside">
+          <a href="/" class="logo header__logo">
+            <picture class="logo__picture">
+              <img src="images/logo.png" alt="Сидэл" width="153" height="41">
+            </picture>
+          </a>
+        </div>
+        <div class="row__col header__col header__col--main">
+          <div class="header__main">
+            <div class="header__search u-search">
+              <div class="u-search__inner">
+                <form action="#" class="u-search__form">
+                  <div class="u-search__form-area">
+                    <input type="text" name="q" class="u-search__form-input" placeholder="Поиск">
+                    <svg class="u-icon u-icon--size-md u-search__form-area-icon u-search__form-area-icon--search">
+                      <use xlink:href="images/icons/icons.svg#search"></use>
+                    </svg>
+                    <svg class="u-icon u-icon--size-md u-search__form-area-icon u-search__form-area-icon--close">
+                      <use xlink:href="images/icons/icons.svg#close-type-1"></use>
+                    </svg>
+                  </div>
+                </form>
+                <div class="u-search__catalog">
+                  <button type="button" class="js-search-catalog-toggle u-search__catalog-btn">
+                    <span class="u-search__catalog-btn-title">Каталог</span>
+                    <svg class="u-icon u-icon--size-md u-search__catalog-btn-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header__action">
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn header__action-btn--contacts">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#call"></use>
+                </svg>
+                <span class="btn-action__title">Контакты</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#basket"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Корзина</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Избранное</span>
+              </button>
+              <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray header__action-btn">
+                <svg class="u-icon u-icon--size-md btn-action__icon">
+                  <use xlink:href="images/icons/icons.svg#profile"></use>
+                </svg>
+                <span class="btn-action__title sr-only">Профиль</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+        
+        <main role="main" class="site__main">
+          <div class="site__breadcrumbs u-breadcrumbs">
+            <div class="container u-breadcrumbs__container">
+              <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a href="/" itemprop="item">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#home"></use>
+                    </svg>
+                    <span itemprop="name">Главная</span>
+                  </a>
+                  <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <span itemprop="name">Каталог</span>
+                  <meta itemprop="position" content="2">
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <section class="s-catalog">
+            <div class="container s-catalog__container">
+              <header class="s-catalog__header">
+                <div class="row s-catalog__header-row">
+                  <div class="row__col s-catalog__header-col s-catalog__header-col--aside">
+                    <div class="s-catalog__header-router">
+                      <a href="#" class="btn btn--theme-black btn--size-sm s-catalog__header-router-btn">
+                        <span class="btn__inner">
+                          <svg class="u-icon btn__icon">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                          </svg>
+                          <span class="btn__title">Назад</span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row__col s-catalog__header-col s-catalog__header-col--main">
+                    <div class="s-catalog__header-main">
+                      <div class="s-catalog__header-main-content">
+                        <h1 class="s-catalog__header-main-title">Каталог товаров</h1>
+                        <p class="s-catalog__header-main-position">12 414 позиций</p>
+                      </div>
+                      <div class="s-catalog__header-main-action">
+                        <button type="button" class="btn-action btn-action--size-md btn-action--theme-gray btn-action--type-sorting s-catalog__header-main-action-btn">
+                          <svg class="u-icon u-icon--size-md btn-action__icon">
+                            <use xlink:href="images/icons/icons.svg#sorting"></use>
+                          </svg>
+                          <span class="btn-action__title sr-only">Сортировка</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="s-catalog__main">
+                <div class="row s-catalog__main-row">
+                  <div class="row__col s-catalog__main-col s-catalog__main-col--aside">
+                    <aside class="s-catalog-aside s-catalog__main-aside">
+                      <div class="s-catalog-aside__inner">
+                        <div class="s-catalog-aside__filter">
+                          <button class="btn-filter btn-filter--size-md btn-filter--theme-gray s-catalog-aside__filter-btn js-catalog-filter">
+                            <span class="btn-filter__inner">
+                              <span class="btn-filter__title">Фильтровать</span>
+                              <span class="btn-filter__icons">
+                                <svg class="u-icon btn-filter__icon">
+                                  <use xlink:href="images/icons/icons.svg#filter"></use>
+                                </svg>
+                                <svg class="u-icon btn-filter__icon">
+                                  <use xlink:href="images/icons/icons.svg#close-type-1"></use>
+                                </svg>
+                              </span>
+                            </span>
+                          </button>
+                          <button class="btn-filter btn-filter--size-md btn-filter--theme-gray s-catalog-aside__filter-btn">
+                            <span class="btn-filter__inner">
+                              <span class="btn-filter__title">Все товары</span>
+                            </span>
+                          </button>
+                          <div class="s-catalog-aside__filter-category">
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Семена/удобрения</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Защита растений</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Садовый инвентарь</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Для дома и дома</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Семена овощей</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Семена фруктов</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="category-item s-catalog-aside__filter-category-item">
+                              <header class="category-item__header">
+                                <button class="btn-filter btn-filter--size-md btn-filter--theme-white category-item__header-btn js-catalog-category-btn">
+                                  <span class="btn-filter__inner">
+                                    <span class="btn-filter__title">Другое</span>
+                                    <span class="btn-filter__icons">
+                                      <svg class="u-icon btn-filter__icon">
+                                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                      </svg>
+                                    </span>
+                                  </span>
+                                </button>
+                              </header>
+                              <div class="category-item__dropdown">
+                                <ul class="category-item__list">
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Средства от грызунов</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Уход за деревьями</a>
+                                  </li>
+                                  <li class="category-item__item">
+                                    <a href="#" class="category-item__link">Защита от болезней</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </aside>
+                  </div>
+                  <div class="row__col s-catalog__main-col s-catalog__main-col--main">
+                    <div class="s-catalog__main-content">
+                      <div class="s-catalog__main-tag">
+                        <div class="s-catalog__main-tag-list tag-list">
+                          <div class="tag-list__inner">
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория длинее</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория длинее</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-item tag-item--size-md tag-item--theme-gray tag-list__item">
+                              <span class="tag-item__inner">
+                                <span class="tag-item__text">Категория</span>
+                              </span>
+                            </button>
+                            <button type="button" class="tag-list__item-toggle toggle-btn toggle-btn--size-md toggle-btn--theme-black-simple">
+                              <span class="toggle-btn__inner">
+                                <span class="toggle-btn__text" data-normal="Показать все" data-active="Свернуть">Показать все</span>
+                                <svg class="u-icon toggle-btn__icon">
+                                  <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                                </svg>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="catalog-list s-catalog__main-list">
+                        <div class="row catalog-list__row">
+                          <div class="catalog-list__col row__col--3">
+                            <article class="catalog-list__card product-card">
+                              <div class="product-card__inner">
+                                <div class="product-card__media">
+                                  <div class="product-card__action">
+                                    <div class="product-card__action-cashback-wrapper">
+                                      <div class="product-card__action-cashback u-cashback u-cashback--size-sm u-cashback--theme-green">
+                                        <div class="u-cashback__inner">
+                                          <svg class="u-icon u-cashback__icon">
+                                            <use xlink:href="images/icons/icons.svg#pills"></use>
+                                          </svg>
+                                          <div class="u-cashback__title">92</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn-action btn-action--size-exs btn-action--theme-white is-favorite product-card__action-btn-favorite">
+                                      <svg class="u-icon u-icon--size-md btn-action__icon">
+                                        <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                                      </svg>
+                                      <span class="btn-action__title sr-only">Добавить в избранное</span>
+                                    </button>
+                                  </div>
+                                  <div class="product-card__slider-wrapper">
+                                    <div class="product-card__slider">
+                                      <picture class="product-card__picture">
+                                        <img src="images/card-2.png" alt="Агровата SPELAND VEGA vaga 124N">
+                                      </picture>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-card__content">
+                                  <h3 class="product-card__title">
+                                    <a href="#" class="product-card__link title-size-3">Агровата SPELAND VEGA vaga 124N</a>
+                                  </h3>
+                                  <div class="product-card__old">
+                                    <div class="product-card__old-discount u-tip u-tip--size-xs u-tip--theme-yellow">
+                                      <div class="u-tip__count">-15%</div>
+                                    </div>
+                                    <div class="price-old product-card__old-price">2176 руб</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                    <div class="price-new product-card__footer-price">1850 руб</div>
+                                    <p class="product-card__footer-wholesale">1.10 / опт</p>
+                                  </div>
+                                  <button type="button" class="btn btn--theme-black btn--size-semi product-card__btn">
+                                    <span class="btn__inner">
+                                      <span class="btn__title">В корзину</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <div class="catalog-list__col row__col--3">
+                            <article class="catalog-list__card product-card">
+                              <div class="product-card__inner">
+                                <div class="product-card__media">
+                                  <div class="product-card__action">
+                                    <div class="product-card__action-cashback-wrapper">
+                                      <div class="product-card__action-cashback u-cashback u-cashback--size-sm u-cashback--theme-green">
+                                        <div class="u-cashback__inner">
+                                          <svg class="u-icon u-cashback__icon">
+                                            <use xlink:href="images/icons/icons.svg#pills"></use>
+                                          </svg>
+                                          <div class="u-cashback__title">92</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn-action btn-action--size-exs btn-action--theme-white is-favorite product-card__action-btn-favorite">
+                                      <svg class="u-icon u-icon--size-md btn-action__icon">
+                                        <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                                      </svg>
+                                      <span class="btn-action__title sr-only">Добавить в избранное</span>
+                                    </button>
+                                  </div>
+                                  <div class="product-card__slider-wrapper">
+                                    <div class="product-card__slider">
+                                      <picture class="product-card__picture">
+                                        <img src="images/card-2.png" alt="Агровата SPELAND VEGA vaga 124N">
+                                      </picture>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-card__content">
+                                  <h3 class="product-card__title">
+                                    <a href="#" class="product-card__link title-size-3">Агровата SPELAND VEGA vaga 124N</a>
+                                  </h3>
+                                  <div class="product-card__old">
+                                    <div class="product-card__old-discount u-tip u-tip--size-xs u-tip--theme-yellow">
+                                      <div class="u-tip__count">-15%</div>
+                                    </div>
+                                    <div class="price-old product-card__old-price">2176 руб</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                    <div class="price-new product-card__footer-price">1850 руб</div>
+                                    <p class="product-card__footer-wholesale">1.10 / опт</p>
+                                  </div>
+                                  <button type="button" class="btn btn--theme-black btn--size-semi product-card__btn">
+                                    <span class="btn__inner">
+                                      <span class="btn__title">В корзину</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <div class="catalog-list__col row__col--3">
+                            <article class="catalog-list__card product-card">
+                              <div class="product-card__inner">
+                                <div class="product-card__media">
+                                  <div class="product-card__action">
+                                    <div class="product-card__action-cashback-wrapper">
+                                      <div class="product-card__action-cashback u-cashback u-cashback--size-sm u-cashback--theme-green">
+                                        <div class="u-cashback__inner">
+                                          <svg class="u-icon u-cashback__icon">
+                                            <use xlink:href="images/icons/icons.svg#pills"></use>
+                                          </svg>
+                                          <div class="u-cashback__title">92</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn-action btn-action--size-exs btn-action--theme-white is-favorite product-card__action-btn-favorite">
+                                      <svg class="u-icon u-icon--size-md btn-action__icon">
+                                        <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                                      </svg>
+                                      <span class="btn-action__title sr-only">Добавить в избранное</span>
+                                    </button>
+                                  </div>
+                                  <div class="product-card__slider-wrapper">
+                                    <div class="product-card__slider">
+                                      <picture class="product-card__picture">
+                                        <img src="images/card-2.png" alt="Агровата SPELAND VEGA vaga 124N">
+                                      </picture>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-card__content">
+                                  <h3 class="product-card__title">
+                                    <a href="#" class="product-card__link title-size-3">Агровата SPELAND VEGA vaga 124N</a>
+                                  </h3>
+                                  <div class="product-card__old">
+                                    <div class="product-card__old-discount u-tip u-tip--size-xs u-tip--theme-yellow">
+                                      <div class="u-tip__count">-15%</div>
+                                    </div>
+                                    <div class="price-old product-card__old-price">2176 руб</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                    <div class="price-new product-card__footer-price">1850 руб</div>
+                                    <p class="product-card__footer-wholesale">1.10 / опт</p>
+                                  </div>
+                                  <button type="button" class="btn btn--theme-black btn--size-semi product-card__btn">
+                                    <span class="btn__inner">
+                                      <span class="btn__title">В корзину</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <div class="catalog-list__col row__col--3">
+                            <article class="catalog-list__card product-card">
+                              <div class="product-card__inner">
+                                <div class="product-card__media">
+                                  <div class="product-card__action">
+                                    <div class="product-card__action-cashback-wrapper">
+                                      <div class="product-card__action-cashback u-cashback u-cashback--size-sm u-cashback--theme-green">
+                                        <div class="u-cashback__inner">
+                                          <svg class="u-icon u-cashback__icon">
+                                            <use xlink:href="images/icons/icons.svg#pills"></use>
+                                          </svg>
+                                          <div class="u-cashback__title">92</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn-action btn-action--size-exs btn-action--theme-white is-favorite product-card__action-btn-favorite">
+                                      <svg class="u-icon u-icon--size-md btn-action__icon">
+                                        <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                                      </svg>
+                                      <span class="btn-action__title sr-only">Добавить в избранное</span>
+                                    </button>
+                                  </div>
+                                  <div class="product-card__slider-wrapper">
+                                    <div class="product-card__slider">
+                                      <picture class="product-card__picture">
+                                        <img src="images/card-2.png" alt="Агровата SPELAND VEGA vaga 124N">
+                                      </picture>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-card__content">
+                                  <h3 class="product-card__title">
+                                    <a href="#" class="product-card__link title-size-3">Агровата SPELAND VEGA vaga 124N</a>
+                                  </h3>
+                                  <div class="product-card__old">
+                                    <div class="product-card__old-discount u-tip u-tip--size-xs u-tip--theme-yellow">
+                                      <div class="u-tip__count">-15%</div>
+                                    </div>
+                                    <div class="price-old product-card__old-price">2176 руб</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                    <div class="price-new product-card__footer-price">1850 руб</div>
+                                    <p class="product-card__footer-wholesale">1.10 / опт</p>
+                                  </div>
+                                  <button type="button" class="btn btn--theme-black btn--size-semi product-card__btn">
+                                    <span class="btn__inner">
+                                      <span class="btn__title">В корзину</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <div class="catalog-list__col row__col--3">
+                            <article class="catalog-list__card product-card">
+                              <div class="product-card__inner">
+                                <div class="product-card__media">
+                                  <div class="product-card__action">
+                                    <div class="product-card__action-cashback-wrapper">
+                                      <div class="product-card__action-cashback u-cashback u-cashback--size-sm u-cashback--theme-green">
+                                        <div class="u-cashback__inner">
+                                          <svg class="u-icon u-cashback__icon">
+                                            <use xlink:href="images/icons/icons.svg#pills"></use>
+                                          </svg>
+                                          <div class="u-cashback__title">92</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn-action btn-action--size-exs btn-action--theme-white is-favorite product-card__action-btn-favorite">
+                                      <svg class="u-icon u-icon--size-md btn-action__icon">
+                                        <use xlink:href="images/icons/icons.svg#heart-fill"></use>
+                                      </svg>
+                                      <span class="btn-action__title sr-only">Добавить в избранное</span>
+                                    </button>
+                                  </div>
+                                  <div class="product-card__slider-wrapper">
+                                    <div class="product-card__slider">
+                                      <picture class="product-card__picture">
+                                        <img src="images/card-2.png" alt="Агровата SPELAND VEGA vaga 124N">
+                                      </picture>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-card__content">
+                                  <h3 class="product-card__title">
+                                    <a href="#" class="product-card__link title-size-3">Агровата SPELAND VEGA vaga 124N</a>
+                                  </h3>
+                                  <div class="product-card__old">
+                                    <div class="product-card__old-discount u-tip u-tip--size-xs u-tip--theme-yellow">
+                                      <div class="u-tip__count">-15%</div>
+                                    </div>
+                                    <div class="price-old product-card__old-price">2176 руб</div>
+                                  </div>
+                                  <div class="product-card__footer">
+                                    <div class="price-new product-card__footer-price">1850 руб</div>
+                                    <p class="product-card__footer-wholesale">1.10 / опт</p>
+                                  </div>
+                                  <button type="button" class="btn btn--theme-black btn--size-semi product-card__btn">
+                                    <span class="btn__inner">
+                                      <span class="btn__title">В корзину</span>
+                                    </span>
+                                  </button>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="s-catalog__main-pagination u-pagination">
+                        <ul class="u-pagination__list">
+                          <li class="u-pagination__item u-pagination__item-router u-pagination__item-router--prev">
+                            <a href="#" class="u-pagination__link">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li class="u-pagination__item">
+                            <a href="#" class="u-pagination__link">1</a>
+                          </li>
+                          <li class="u-pagination__item">
+                            <a href="#" class="u-pagination__link is-active">2</a>
+                          </li>
+                          <li class="u-pagination__item">
+                            <a href="#" class="u-pagination__link">3</a>
+                          </li>
+                          <li class="u-pagination__item">
+                            <a href="#" class="u-pagination__link">4</a>
+                          </li>
+                          <li class="u-pagination__item u-pagination__item-router u-pagination__item-router--next">
+                            <a href="#" class="u-pagination__link">
+                              <svg class="u-icon">
+                                <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <article class="s-catalog__faq">
+                <h2 class="s-catalog__faq-title title-size-1">Частые вопросы</h2>
+                <div class="faq-list s-catalog__faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                  <div class="row faq-list__row">
+                    <div class="faq-list__col row__col--6">
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="faq-list__col row__col--6">
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                      <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-card__header">
+                          <button type="button" class="faq-card__btn js-faq-card-toggle">
+                            <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
+                          </button>
+                          <div class="faq-card__icon">
+                            <svg class="u-icon u-icon--size-md">
+                              <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                          <div class="faq-card__inner">
+                            <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+          
+        </main>
+        
+        <footer class="footer site__footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="row footer__top-row">
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Карта сайта</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Главная</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Подписка</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Лента</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Образование</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Каталог</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Семена овощей</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Семена фруктов</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Микрозелень</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Аксессуары для дачи</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Садовый инвентарь</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="row__col footer__col-top footer__col--nav">
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-title">Контакты</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="mailto:sidelshop@mail.ru" class="footer__nav-link-contacts">sidelshop@mail.ru</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="tel:+79685287239" class="footer__nav-link-contacts">+7 (968) 528-72-39</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__sc sc-block">
+              <ul class="sc-block__list">
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sc-block__item">
+                  <a href="#" class="sc-block__link">
+                    <svg class="u-icon u-icon--size-md">
+                      <use xlink:href="images/icons/icons.svg#sc-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row__col footer__col-top footer__col--subscribe">
+            <div class="footer__subscribe u-subscribe">
+              <form action="#" class="u-subscribe__form">
+                <input type="email" name="subscribe" class="u-subscribe__input" required placeholder="Подписаться на рассылку">
+                <button type="submit" class="u-subscribe__btn">
+                  <svg class="u-icon u-icon--size-md">
+                    <use xlink:href="images/icons/icons.svg#logo-telegram"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="footer__subscribe-appeal">Заказывай и получай кэшбек до&nbsp;20% c каждой покупки!</div>
+            <nav class="footer__subscribe-nav">
+              <ul>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+                <li>
+                  <a href="#">Условия использования</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="row footer__bottom-row">
+          <div class="row__col footer__col footer__col--logo">
+            <a href="/" class="logo footer__logo">
+              <picture class="logo__picture">
+                <img src="images/logo.png" alt="Сидэл" width="153" height="41">
+              </picture>
+            </a>
+          </div>
+          <div class="row__col footer__col footer__col--payments">
+            <div class="footer__payments-method payments-method">
+              <ul class="payments-method__list">
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-1.png" alt="VISA" width="40" height="40">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-2.png" alt="MasterCard" width="40" height="40">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-3.png" alt="WebMoney" width="30" height="32">
+                  </picture>
+                </li>
+                <li class="payments-method__item">
+                  <picture class="payments-method__picture">
+                    <img src="images/payments/payments-method-4.png" alt="PayPal" width="55" height="20">
+                  </picture>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        
+      </div>
+    </div>
+
+    <script src="js/app.min.js??=v=20240626185714"></script>
+  </body>
+</html>

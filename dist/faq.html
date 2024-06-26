@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-  <link rel="stylesheet" href="css/style.min.css??=v=20240622155808">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240626185714">
   <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
@@ -25,14 +25,14 @@
   <div class="container header__container">
     <div class="header__inner">
       <div class="row header__row">
-        <div class="row__col header__col-aside">
+        <div class="row__col header__col header__col--aside">
           <a href="/" class="logo header__logo">
             <picture class="logo__picture">
               <img src="images/logo.png" alt="Сидэл" width="153" height="41">
             </picture>
           </a>
         </div>
-        <div class="row__col header__col-main">
+        <div class="row__col header__col header__col--main">
           <div class="header__main">
             <div class="header__search u-search">
               <div class="u-search__inner">
@@ -144,8 +144,40 @@
                         </div>
                       </div>
                     </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <div class="faq-card__header">
+                        <button type="button" class="faq-card__btn js-faq-card-toggle">
+                          <h2 class="faq-card__title" itemprop="name">Как правильно заказать на сайте?</h2>
+                        </button>
+                        <div class="faq-card__icon">
+                          <svg class="u-icon u-icon--size-md">
+                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                        <div class="faq-card__inner">
+                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
+                        </div>
+                      </div>
+                    </article>
                     <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                       <div class="faq-card__header">
                         <button type="button" class="faq-card__btn js-faq-card-toggle">
@@ -182,8 +214,6 @@
                         </div>
                       </div>
                     </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
                     <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                       <div class="faq-card__header">
                         <button type="button" class="faq-card__btn js-faq-card-toggle">
@@ -201,12 +231,10 @@
                         </div>
                       </div>
                     </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
                     <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                       <div class="faq-card__header">
                         <button type="button" class="faq-card__btn js-faq-card-toggle">
-                          <h2 class="faq-card__title" itemprop="name">Какие данные нужны для регистрации?</h2>
+                          <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
                         </button>
                         <div class="faq-card__icon">
                           <svg class="u-icon u-icon--size-md">
@@ -220,50 +248,10 @@
                         </div>
                       </div>
                     </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
                     <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                       <div class="faq-card__header">
                         <button type="button" class="faq-card__btn js-faq-card-toggle">
-                          <h2 class="faq-card__title" itemprop="name">Какие данные нужны для регистрации?</h2>
-                        </button>
-                        <div class="faq-card__icon">
-                          <svg class="u-icon u-icon--size-md">
-                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <div class="faq-card__inner">
-                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
-                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                      <div class="faq-card__header">
-                        <button type="button" class="faq-card__btn js-faq-card-toggle">
-                          <h2 class="faq-card__title" itemprop="name">Кто я и откуда?</h2>
-                        </button>
-                        <div class="faq-card__icon">
-                          <svg class="u-icon u-icon--size-md">
-                            <use xlink:href="images/icons/icons.svg#arrow-type-3"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="faq-card__dropdown" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                        <div class="faq-card__inner">
-                          <div class="content faq-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro, rem quos nisi similique sit nihil mollitia repellendus cupiditate? Magnam doloribus, maiores amet temporibus animi minus id placeat perferendis obcaecati.</div>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="faq-list__col row__col--6">
-                    <article class="faq-card faq-card--size-sm faq-card--theme-gray faq-list__card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                      <div class="faq-card__header">
-                        <button type="button" class="faq-card__btn js-faq-card-toggle">
-                          <h2 class="faq-card__title" itemprop="name">Кто я и откуда?</h2>
+                          <h2 class="faq-card__title" itemprop="name">Куда приедет посылка?</h2>
                         </button>
                         <div class="faq-card__icon">
                           <svg class="u-icon u-icon--size-md">
@@ -447,6 +435,6 @@
       </div>
     </div>
 
-    <script src="js/app.min.js??=v=20240622155808"></script>
+    <script src="js/app.min.js??=v=20240626185714"></script>
   </body>
 </html>

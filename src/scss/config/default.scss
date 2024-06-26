@@ -172,12 +172,18 @@ svg,
   &__header {
   }
   &__main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
   }
   &__breadcrumbs {
     padding: 25rem 0 30rem;
   }
   &__footer {
     margin-top: auto;
+  }
+  &__account {
+    flex-grow: 1;
   }
 }
 

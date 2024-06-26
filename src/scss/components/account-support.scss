@@ -1,0 +1,15 @@
+.account-support {
+  &__header {
+    margin: 0 0 36rem;
+    display: flex;
+    &-btn-appeal {
+      margin-right: 14rem;
+      flex-shrink: 0;
+    }
+    &-search {
+      flex-grow: 1;
+    }
+  }
+  &__table {
+  }
+}

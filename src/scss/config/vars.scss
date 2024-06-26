@@ -23,14 +23,18 @@ $radiusMd: 15rem;
 $radiusLg: 30rem;
 $radiusXl: 40rem;
 
+$gapSection: 60rem;
+
 $whiteColor: #ffffff;
 $blackColor: #23262F;
 $blueColor: #1A63D1;
+$lightBlueColor: #E7F0FF;
 $greyColor: #B1B5C3;
 $lightGreyColor: #F4F5F6;
 $steelGreyColor: #E7E7E9;
 $gloryGreyColor: #D9D9D9;
 $ultraGrenColor: #D3D5D9;
+$easyGreyColor: #F9FAFA;
 $greenColor: #45B26B;
 $lightGreenColor: #32BF79;
 $yellowColor: #FCE667;
@@ -45,12 +49,15 @@ $accentFamily: $accentFont, $mainFont, Arial, sans-serif;
 $fontColor: $blackColor;
 $fontWeight: $mainWeight;
 
+$boxshadowYellow1: 0 10rem 10rem rgba($yellowColor, .2);
+$boxshadowBlack1: 0 4rem 40rem rgba(0,0,0, .05);
+
 $transition: all .4s 0ms;
 
 $scrollbarWidth: 6rem;
 
 $colWidth: 8.33333333333%;
-$colAside: 22.521%;
+$colAside: 20%;
 
 $xl: 1340px;
 $xl-mf: $xl + 1;
@@ -79,11 +86,14 @@ $xs-mf: $xs + 1;
   --fs-8: 9rem;
   --fs-9: 8rem;
   --fs-10: 18rem;
+  --fs-11: 22rem;
 
   --gap: 10rem;
   --gap-: -10rem;
   --gap-fluid: 20rem;
   --gap-fluid-: -20rem;
+
+  --site-offset-desktop: 104rem;
   @media (max-width: $sm) {
   }
 }

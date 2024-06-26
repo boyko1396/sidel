@@ -1,0 +1,30 @@
+.account {
+  display: flex;
+  &__container {
+  }
+  &__row {
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+  &__col {
+    &--aside {
+      max-width: $colAside;
+      display: flex;
+      margin-right: 4.8%;
+      flex-basis: $colAside;
+      flex-shrink: 0;
+      position: sticky;
+      top: var(--site-offset-desktop);
+    }
+    &--main {
+      flex-grow: 1;
+    }
+  }
+  &__aside {
+    flex-grow: 1;
+  }
+  &__main {
+    &-support {
+    }
+  }
+}

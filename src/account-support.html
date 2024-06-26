@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Сидэл - Аккаунт - Поддержка'
+  })
+  <body>
+    <div class="u-preloader"></div>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <!-- account BEGIN -->
+        <main role="main" class="account site__account">
+          <div class="container account__container">
+            <div class="row account__row">
+              <div class="row__col account__col account__col--aside">
+                <aside class="account-aside account__aside">
+                  <nav class="account-aside__nav" role="navigation">
+                    <ul class="account-aside__nav">
+                      <li class="account-aside__nav-item">
+                        <a href="#" class="account-aside__nav-link">
+                          <svg class="u-icon account-aside__nav-link-icon">
+                            <use xlink:href="images/icons/icons.svg#home"></use>
+                          </svg>
+                          <span class="sr-only account-aside__nav-link-title">Главная</span>
+                        </a>
+                      </li>
+                      <li class="account-aside__nav-item">
+                        <a href="#" class="account-aside__nav-link">
+                          <svg class="u-icon account-aside__nav-link-icon">
+                            <use xlink:href="images/icons/icons.svg#qr-code"></use>
+                          </svg>
+                          <span class="sr-only account-aside__nav-link-title">Главная</span>
+                        </a>
+                      </li>
+                      <li class="account-aside__nav-item">
+                        <a href="#" class="account-aside__nav-link">
+                          <svg class="u-icon account-aside__nav-link-icon">
+                            <use xlink:href="images/icons/icons.svg#document"></use>
+                          </svg>
+                          <span class="sr-only account-aside__nav-link-title">Главная</span>
+                        </a>
+                      </li>
+                      <li class="account-aside__nav-item">
+                        <a href="#" class="account-aside__nav-link is-active">
+                          <svg class="u-icon account-aside__nav-link-icon">
+                            <use xlink:href="images/icons/icons.svg#profile"></use>
+                          </svg>
+                          <span class="sr-only account-aside__nav-link-title">Профиль</span>
+                        </a>
+                        <ul class="account-aside__nav-sub">
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#dashboard"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Dashboard</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#box"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Моя корзина</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#basket-type-1"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Мои заказы</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#heart-outline"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Избранное</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#wallet"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Бонусный счет</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#settings"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Настройки</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link is-active">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#chat-fill"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Поддержка</span>
+                            </a>
+                          </li>
+                          <li class="account-aside__nav-sub-item">
+                            <a href="#" class="account-aside__nav-sub-link">
+                              <svg class="u-icon account-aside__nav-sub-link-icon">
+                                <use xlink:href="images/icons/icons.svg#exit"></use>
+                              </svg>
+                              <span class="account-aside__nav-sub-link-title">Выйти</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </aside>
+              </div>
+              <div class="row__col account__col account__col--main">
+                <div class="account__main">
+                  <div class="account-support account__main-support">
+                    <header class="account-support__header">
+                      <button type="button" class="btn btn--size-lg btn--theme-accent-light account-support__header-btn-appeal">
+                        <span class="btn__inner">
+                          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+                            <use xlink:href="images/icons/icons.svg#plus-type-3"></use>
+                          </svg>
+                          <span class="btn__title">Создать обращение</span>
+                        </span>
+                      </button>
+                      <div class="u-search account-support__header-search">
+                        <div class="u-search__inner">
+                          <form action="#" class="u-search__form">
+                            <div class="u-search__form-area">
+                              <input type="text" name="q" class="u-search__form-input" placeholder="Поиск по обращениям">
+                              <svg class="u-icon u-icon--size-md u-search__form-area-icon u-search__form-area-icon--search">
+                                <use xlink:href="images/icons/icons.svg#search"></use>
+                              </svg>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </header>
+                    <div class="u-table account-support__table">
+                      <table class="u-table__el">
+                        <thead class="u-table__head">
+                          <tr>
+                            <th class="u-table__th">
+                              <button type="button" class="u-table__btn-sorting is-active is-active-1">
+                                <span class="u-table__btn-sorting-title">Статус</span>
+                                <svg class="u-icon u-table__btn-sorting-icon">
+                                  <use xlink:href="images/icons/icons.svg#sorting-type-1"></use>
+                                </svg>
+                              </button>
+                            </th>
+                            <th class="u-table__th">
+                              <button type="button" class="u-table__btn-sorting">
+                                <span class="u-table__btn-sorting-title">Номер обращения</span>
+                                <svg class="u-icon u-table__btn-sorting-icon">
+                                  <use xlink:href="images/icons/icons.svg#sorting-type-1"></use>
+                                </svg>
+                              </button>
+                            </th>
+                            <th class="u-table__th">
+                              <button type="button" class="u-table__btn-sorting">
+                                <span class="u-table__btn-sorting-title">Дата</span>
+                                <svg class="u-icon u-table__btn-sorting-icon">
+                                  <use xlink:href="images/icons/icons.svg#sorting-type-1"></use>
+                                </svg>
+                              </button>
+                            </th>
+                            <th class="u-table__th">
+                              <button type="button" class="u-table__btn-sorting">
+                                <span class="u-table__btn-sorting-title">Текст</span>
+                                <svg class="u-icon u-table__btn-sorting-icon">
+                                  <use xlink:href="images/icons/icons.svg#sorting-type-1"></use>
+                                </svg>
+                              </button>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="u-table__tbody">
+                          <tr>
+                            <td class="u-table__td u-table__td--status">
+                              <div class="u-table__cell">
+                                <p class="u-table__status">В работе</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--number">
+                              <div class="u-table__cell">
+                                <p class="u-table__number">17379722-24</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--date">
+                              <div class="u-table__cell">
+                                <time class="u-table__date">12.15.22</time>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--support">
+                              <div class="u-table__cell">
+                                <div class="u-table__support">
+                                  <p class="u-table__support-text">Добрый день, у меня не зачислился кэшбек Добрый день, у меня не зачислился кэшбек</p>
+                                  <div class="u-table__support-counter">1</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="u-table__td u-table__td--status">
+                              <div class="u-table__cell">
+                                <p class="u-table__status">В работе</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--number">
+                              <div class="u-table__cell">
+                                <p class="u-table__number">17379722-24</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--date">
+                              <div class="u-table__cell">
+                                <time class="u-table__date">12.15.22</time>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--support">
+                              <div class="u-table__cell">
+                                <div class="u-table__support">
+                                  <p class="u-table__support-text">Добрый день, у меня не зачислился кэшбек Добрый день, у меня не зачислился кэшбек</p>
+                                  <div class="u-table__support-counter">1</div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="u-table__td u-table__td--status">
+                              <div class="u-table__cell">
+                                <p class="u-table__status u-table__status--completed">Завершено</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--number">
+                              <div class="u-table__cell">
+                                <p class="u-table__number">17379722-24</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--date">
+                              <div class="u-table__cell">
+                                <time class="u-table__date">12.15.22</time>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--support">
+                              <div class="u-table__cell">
+                                <div class="u-table__support">
+                                  <p class="u-table__support-text">Добрый день, у меня не зачислился кэшбек Добрый день, у меня не зачислился кэшбек</p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="u-table__td u-table__td--status">
+                              <div class="u-table__cell">
+                                <p class="u-table__status u-table__status--completed">Завершено</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--number">
+                              <div class="u-table__cell">
+                                <p class="u-table__number">17379722-24</p>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--date">
+                              <div class="u-table__cell">
+                                <time class="u-table__date">12.15.22</time>
+                              </div>
+                            </td>
+                            <td class="u-table__td u-table__td--support">
+                              <div class="u-table__cell">
+                                <div class="u-table__support">
+                                  <p class="u-table__support-text">Добрый день, у меня не зачислился кэшбек Добрый день, у меня не зачислился кэшбек</p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- account END -->
+      </div>
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>
